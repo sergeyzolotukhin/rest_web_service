@@ -1,4 +1,4 @@
-package ua.in.szolotukhin.rest.ws.api;
+package ua.in.szolotukhin.rs.ws.service.api;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;

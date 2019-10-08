@@ -1,0 +1,8 @@
+GET http://localhost:8080/services/sayHello/serhij.zolotukhin
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-10-08T122057.200.txt
+
+###
+
