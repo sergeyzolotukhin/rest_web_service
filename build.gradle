@@ -1,0 +1,47 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        // spring boot 2.x.x
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:2.1.6.RELEASE")
+
+        // spring boot 1.x.x
+//        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.2.1.RELEASE")
+    }
+}
+
+plugins {
+    id 'java'
+}
+
+// spring boot 1.x.x
+//apply plugin: 'spring-boot'
+
+// spring boot 2.x.x.
+apply plugin: 'org.springframework.boot'
+apply plugin: 'io.spring.dependency-management'
+
+
+group 'ua.in.szolotukhin'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+dependencies {
+    compile "org.springframework.boot:spring-boot-starter-web"
+    compile "org.apache.cxf:cxf-rt-frontend-jaxrs:3.0.3"
+    compile "com.fasterxml.jackson.jaxrs:jackson-jaxrs-json-provider:2.5.1"
+    compile "com.google.guava:guava:18.0"
+    compile group: 'org.projectlombok', name: 'lombok', version: '1.18.8'
+
+    compileOnly 'org.projectlombok:lombok:1.18.8'
+    annotationProcessor 'org.projectlombok:lombok:1.18.8'
+
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
