@@ -1,6 +1,6 @@
 package ua.in.szolotukhin.rs.ws.service.impl;
 
-import ua.in.szolotukhin.rs.ws.service.api.HelloService;
+import ua.in.szolotukhin.rs.ws.api.HelloService;
 
 public class HelloServiceImpl implements HelloService {
     public String sayHello(String name) {
