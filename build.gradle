@@ -35,9 +35,9 @@ repositories {
 
 dependencies {
     compile "org.springframework.boot:spring-boot-starter-web"
-    compile "org.apache.cxf:cxf-rt-frontend-jaxrs:3.0.3"
-    compile "com.fasterxml.jackson.jaxrs:jackson-jaxrs-json-provider:2.5.1"
-    compile "com.google.guava:guava:18.0"
+    compile "org.apache.cxf:cxf-rt-frontend-jaxrs:3.3.3"
+    compile "com.fasterxml.jackson.jaxrs:jackson-jaxrs-json-provider:2.10.0"
+    compile "com.google.guava:guava:28.1-jre"
     compile group: 'org.projectlombok', name: 'lombok', version: '1.18.8'
 
     compileOnly 'org.projectlombok:lombok:1.18.8'
